@@ -19,7 +19,7 @@ if [[ "$update_dependencies" == "y" ]]; then
     composer update
     log_task "Backend dependencies updated."
 
-    cd ../quasar-web
+    cd ../frontend
     npm update
     log_task "Frontend dependencies updated."
     cd ..
@@ -50,7 +50,7 @@ log_task "Backend updated and now live."
 cd ..
 
 # Frontend deployment
-cd quasar-web
+cd frontend
 log_task "Deploying frontend changes..."
 npm run build
 log_task "Frontend updated."
