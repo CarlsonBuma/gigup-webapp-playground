@@ -1,3 +1,6 @@
+#! User Authentication is not XSS-Secured
+Bearer Token is stored within Browser Localstorage, which makes it volunerable for XSS-Attacks.
+
 # Webapp Template
 by Carlson, 2025-06-25
 
